@@ -6,7 +6,7 @@ ARRAY_SYMBOLS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c'
                  'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C',
                  'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
                  'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '@', '!', '#', '$',
-                 '%','=','&']
+                 '%', '=', '&']
 
 # Получение количества символов в пароле
 CONST_COUNT_SYMBOLS = 6
@@ -18,12 +18,13 @@ if custom_count_symbols > 0:
 else:
     count_symbols = CONST_COUNT_SYMBOLS
 
-
 count_variant = len(ARRAY_SYMBOLS) ** count_symbols
+
 
 # Функция случайных символов
 def random_symbols():
     return ARRAY_SYMBOLS[random.randint(0, len(ARRAY_SYMBOLS) - 1)]
+
 
 print(f'Версия 0.0.1')
 print(f'Количество доступных символов: {len(ARRAY_SYMBOLS)}')
@@ -31,8 +32,6 @@ print(f'Количество возможных вариантов: {count_varia
 
 # Массив символов
 password_array = [i for i in range(0, count_symbols)]
-
-
 
 password = ''
 
