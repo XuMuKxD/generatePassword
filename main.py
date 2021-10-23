@@ -25,7 +25,7 @@ count_variant = len(ARRAY_SYMBOLS) ** count_symbols
 def random_symbols():
     return ARRAY_SYMBOLS[random.randint(0, len(ARRAY_SYMBOLS) - 1)]
 
-
+print(f'Версия 0.0.1')
 print(f'Количество доступных символов: {len(ARRAY_SYMBOLS)}')
 print(f'Количество возможных вариантов: {count_variant}')
 
